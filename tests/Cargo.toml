@@ -1,0 +1,17 @@
+[package]
+name = "tests"
+version = "0.1.0"
+authors = ["zie1ony <maciej@casperlabs.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+casperlabs-contract = "0.6.0"
+casperlabs-types = "0.6.0"
+casperlabs-engine-test-support = "0.8.0"
+
+[features]
+default = ["casperlabs-contract/std", "casperlabs-types/std", "casperlabs-engine-test-support/test-support", "casperlabs-contract/test-support"]
